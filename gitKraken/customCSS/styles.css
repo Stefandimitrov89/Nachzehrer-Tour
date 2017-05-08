@@ -1,5 +1,12 @@
-.services {
+.services, .blocks, .albums {
   text-align: center;
+}
+
+.albums img {
+  object-fit: cover;
+  width: 150px;
+  height: 100px;
+  
 }
 
 .top-line {

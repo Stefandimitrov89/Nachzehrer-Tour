@@ -23,42 +23,47 @@ var data = {
   ],
   albums: [
     {
-      className: "card	col-md-4",
+      className: "card	col-lg-3 col-md-6 ",
       imgSource: "album_1.jpg",
-      pText:"This is a wider card with supporting text below as a natural lead-in to additional content"
+      pText:"This bbbbbbbbbbbbbbbb"
     },
     {
-      className: "card	col-md-4",
+      className: "card	col-lg-3 col-md-6 ",
       imgSource: "album_1.jpg",
-      pText:"This is a wider card with supporting text below as a natural lead-in to additional content"
+      pText:"This vvvvvvvvvvvvvvvvvv"
     },
     {
-      className: "card	col-md-4",
+      className: "card	col-lg-3 col-md-6",
       imgSource: "album_1.jpg",
-      pText:"This is a wider card with supporting text below as a natural lead-in to additional content"
+      pText:"This xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    {
+      className: "card	col-lg-3 col-md-6",
+      imgSource: "album_1.jpg",
+      pText:"This zzzzzzzzzzzzzzzzzzzzzzzzzzz"
     }
   ],
   services:[
     {
-      className: "col-lg-3 hotels services",
+      className: "col-lg-3 col-md-6 hotels services",
       imgSource: "a_circle.gif",
       h2: "Hotels",
       pText: "Choose from more than 10 hotels"
     },
     {
-      className: "col-lg-3 huds services",
+      className: "col-lg-3 col-md-6 huds services",
       imgSource: "a_circle.gif",
       h2: "Huds",
       pText: "Choose from more than 10 huds"
     },
     {
-      className: "col-lg-3 bmb services",
+      className: "col-lg-3 col-md-6 bmb services",
       imgSource: "a_circle.gif",
       h2: "BMB",
       pText: "Choose from more than 10 bmb"
     },
     {
-      className: "col-lg-3 cruise services",
+      className: "col-lg-3 col-md-6 cruise services",
       imgSource: "a_circle.gif",
       h2: "Cruise",
       pText: "Choose from more than 10 cruise"

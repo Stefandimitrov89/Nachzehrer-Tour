@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-  <!--<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-with, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-    <link type="text/css" rel="bootstrap/css/bootstrap.min.css">
-    </script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>-->
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -119,8 +110,9 @@
         <p>© Company 2017</p>
       </div>
     </footer>
-    <!-- ==========================handlebars <div id='hb-container'>==========================-->
+    <!-- ==========================handlebars script entry point==========================-->
     <script id="hb-template-container" type="text/handlebars">
+     <!-- ===== services elements -->
       <div class="row">
         {{#each services}}
         <div class="{{className}}">
@@ -132,10 +124,11 @@
         {{/each}}
       </div>
       <hr class="featurette-divider">
+      <!-- ===== albums elements -->
       <div class="album text-muted">
         <div class="row">
           {{#each albums}}
-          <div class="{{className}}">
+          <div class="{{className}} albums">
             <img data-src="holder.js/100px280/thumb" alt="100%x280" style="height: 280px; width: 100%; display: block;" src="{{imgSource}}"
               data-holder-rendered="true">
               <p class="card-text">{{pText}}</p>
@@ -144,21 +137,21 @@
         </div>
       </div>
       <hr class="featurette-divider">
-      <!-- ==========================handlebars <div id='hb-container'>==========================-->
+      <!-- ===== blocks elements -->
       {{#each blocks}}
       <div class="row featurette">
-        <div class="{{topDivClass}}">
+        <div class="{{topDivClass}} blocks">
           <h2 class="featurette-heading">{{featuretteHeading}}<span class="text-muted">{{textMuted}}</span></h2>
           <p class="lead">{{lead}}</p>
         </div>
-        <div class="{{botDivClass}}">
+        <div class="{{botDivClass}} blocks">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="{{imgSource}}"
             data-holder-rendered="true">
         </div>
       </div>
       <hr class="featurette-divider"> {{/each}}
     </script>
-    <!-- ==========================handlebars <div id='hb-container'>==========================-->
+    <!-- ==========================handlebars script exit point==========================-->
     <script src="customJS/handlebarsTemp.js"></script>
     <link rel="stylesheet" href="customCSS/styles.css">
 </body>
