@@ -30,7 +30,7 @@ var data = {
     {
       className: "card	col-lg-3 col-md-6 ",
       imgSource: "album_1.jpg",
-      pText:"This vvvvvvvvvvvvvvvvvv"
+      pText:"This vvvv99999vvvvvv"
     },
     {
       className: "card	col-lg-3 col-md-6",
