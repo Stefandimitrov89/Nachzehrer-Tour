@@ -1,12 +1,14 @@
-import { MyRouter } from 'MyRouter';
 import  'jquery'; 
 
+import { MyRouter } from 'MyRouter';
+import * as homeController from 'homeController';
 
 const router = new MyRouter();
 
 router
+    .on('', () => location.hash = '#/home')
     .on('/', () => location.hash = '#/home',)
-    .on('/home')
+    .on('#/home', homeController.get)
     .on('/profile')
     .on('/search')
     .on('/admin')

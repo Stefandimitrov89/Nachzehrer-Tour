@@ -30,8 +30,9 @@ app.use('/libs', express.static('node_modules'));
 // app.get('/api/my-cookie', myCookiesController.get);
 
 // // Categories
-// var categoriesController = require('./controllers/categories-controller')(db);
+//var categoriesController = require('./controllers/categories-controller')(db);
 // app.get('/api/categories', categoriesController.get);
+
 
 
 var port = 3000;
