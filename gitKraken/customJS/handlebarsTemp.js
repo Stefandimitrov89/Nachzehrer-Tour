@@ -10,7 +10,7 @@ var data = {
       featuretteHeading:"Oh yeah, it's that good. ",
       lead: 'onec ullamcorper nulla non metus auctor fringilla. Vestibulum id lig',
       textMuted: 'See for yourself.',
-      imgSource: 'b_1.jpg'
+      imgSource: './images/block_1.jpg'
     },
     {
       topDivClass: "col-md-7",
@@ -18,53 +18,53 @@ var data = {
       featuretteHeading:'additionalText. ',
       lead: 'Vestibulum id lig',
       textMuted: 'See for myself.',
-      imgSource: 'b_1.jpg'
+      imgSource: "./images/block_2.jpg"
     }
   ],
   albums: [
     {
       className: "card	col-lg-3 col-md-6 ",
-      imgSource: "album_1.jpg",
+      imgSource: "./images/album_1.jpg",
       pText:"This bbbbbbbbbbbbbbbb"
     },
     {
       className: "card	col-lg-3 col-md-6 ",
-      imgSource: "album_1.jpg",
+      imgSource: "./images/album_1.jpg",
       pText:"This vvvv99999vvvvvv"
     },
     {
       className: "card	col-lg-3 col-md-6",
-      imgSource: "album_1.jpg",
+      imgSource: "./images/album_1.jpg",
       pText:"This xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     },
     {
       className: "card	col-lg-3 col-md-6",
-      imgSource: "album_1.jpg",
+      imgSource: "./images/album_1.jpg",
       pText:"This zzzzzzzzzzzzzzzzzzzzzzzzzzz"
     }
   ],
   services:[
     {
       className: "col-lg-3 col-md-6 hotels services",
-      imgSource: "a_circle.gif",
+      imgSource: './images/service_1.gif',
       h2: "Hotels",
       pText: "Choose from more than 10 hotels"
     },
     {
       className: "col-lg-3 col-md-6 huds services",
-      imgSource: "a_circle.gif",
+      imgSource: './images/service_1.gif',
       h2: "Huds",
       pText: "Choose from more than 10 huds"
     },
     {
       className: "col-lg-3 col-md-6 bmb services",
-      imgSource: "a_circle.gif",
+      imgSource: './images/service_1.gif',
       h2: "BMB",
       pText: "Choose from more than 10 bmb"
     },
     {
       className: "col-lg-3 col-md-6 cruise services",
-      imgSource: "a_circle.gif",
+      imgSource: './images/service_1.gif',
       h2: "Cruise",
       pText: "Choose from more than 10 cruise"
     }
