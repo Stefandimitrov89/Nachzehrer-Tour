@@ -13,7 +13,13 @@ System.config({
    'data': 'js/data.js',
    'homeController': 'js/controllers/home.js',
 //    'myCookieController': 'js/controllers/myCookie.js',
-   'serviceController': 'js/controllers/service.js',
+   //'serviceController': 'js/controllers/service.js',
+
+   'hotelController': 'js/controllers/hotel.js',
+   'hudController': 'js/controllers/hud.js',
+   'cruiseController': 'js/controllers/cruise.js',
+   'bmbController': 'js/controllers/bmb.js',
+
    'userController': 'js/controllers/user.js',
    'templates': 'js/templates.js',
 
