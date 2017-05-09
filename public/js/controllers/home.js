@@ -10,17 +10,17 @@ const $appContainer = $('#app-container');
 
 export function get(params) {
     
-  console.log('we are here');
+  console.log('-->>>-->>> we are in home.js get');;
    const { category } = params;
-   $appContainer.html('<h1>works</h1>')
+   $appContainer.html('<h1>works</h1>');
 
   Promise.all([
-    loadTemplate('home'),
-    data.getServices()
+    loadTemplate('huds'),
+    data.getHuds()
 
   ])
   .then(([template, hotels]) => {
-    console.log("hotels");
+    console.log("+++++++++++++++ home.js: " + JSON.stringify(hotels));
     $appContainer.html(template(hotels));
   });
 }
