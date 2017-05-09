@@ -4,6 +4,7 @@ class MyRouter {
   }
 
   on(targetUrl, callback) {
+    console.log("---->>> MyRouter" + targetUrl);
     this._routes.push({
       targetUrl,
       callback
@@ -14,7 +15,7 @@ class MyRouter {
 
   navigate() {
     const currentUrl = location.hash.slice(1);
-
+    console.log("currentUrl = " + currentUrl)
     for(const {targetUrl, callback} of this._routes) {
       const params = MyRouter.matchUrls(currentUrl, targetUrl);
       if(params) {

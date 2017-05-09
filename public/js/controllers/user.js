@@ -7,6 +7,17 @@ const LOCALSTORAGE_AUTH_KEY_NAME = 'authkey';
 const AUTH_KEY_HEADER = 'x-auth-key';
 
 export function get(params) {
+  console.log('-->>>-->>> we are in user.js');
+  const { category } = params;
+
+  loadTemplate('auth')
+    .then(template => {
+      $appContainer.html(template());
+    });
+}
+
+export function info(params) {
+  console.log('-->>>-->>> we are in user.js info');
   const { category } = params;
 
   loadTemplate('auth')
