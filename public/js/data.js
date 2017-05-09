@@ -28,5 +28,5 @@ export function register(username, passHash) {
 }
 
 export function getServices(){
-    return requester.get(api/services);
+    return "";//requester.get(api/services);
 }

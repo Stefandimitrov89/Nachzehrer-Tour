@@ -15,10 +15,12 @@ class MyRouter {
 
   navigate() {
     const currentUrl = location.hash.slice(1);
-    console.log("currentUrl = " + currentUrl)
-    for(const {targetUrl, callback} of this._routes) {
+    console.log("---->>> MyRouter - navigate - currentUrl = " + currentUrl);
+    console.log("---->>> MyRouter - navigate - this._routes = " + this._routes);
+    for (const {targetUrl, callback} of this._routes) {
       const params = MyRouter.matchUrls(currentUrl, targetUrl);
-      if(params) {
+      if (params) {
+        console.log("---->>> MyRouter ++++++ navigate - this.params = " + params);
         callback(params);
         break;
       }
@@ -29,27 +31,34 @@ class MyRouter {
     const currentUrlParts = currentUrl.split(/\//g);
     const targetUrlParts = targetUrl.split(/\//g);
 
-    if(targetUrlParts.length !== currentUrlParts.length) {
+    if (targetUrlParts.length !== currentUrlParts.length) {
       return false;
     }
 
     const params = {};
 
     const len = currentUrlParts.length;
-    for(let i = 0; i < len; i += 1) {
-      if(targetUrlParts[i][0] !== ':') {
-        if(currentUrlParts[i] !== targetUrlParts[i]) {
+    console.log("---->>> ================00000000000000==========");
+    console.log("---->>> MyRouter - matchUrls - len: " + len);
+    for (let i = 0; i < len; i += 1) {
+      if (targetUrlParts[i][0] !== ':') {
+        console.log("---->>> ==================================");
+        console.log("---->>> currentUrlParts[i]: " + currentUrlParts[i]);
+        console.log("---->>> targetUrlParts[i]: " + targetUrlParts[i]);
+        if (currentUrlParts[i] === targetUrlParts[i]) {
+          console.log("---->>> MyRouter - matchUrls - false");
           return false;
         }
-      }
-      else {
+      } else {
         const paramName = targetUrlParts[i].slice(1);
         params[paramName] = currentUrlParts[i];
       }
     }
-
+    console.log("---->>> MyRouter - matchUrls - params = " + params);
     return params;
   }
 }
 
-export { MyRouter };
+export {
+  MyRouter
+};
