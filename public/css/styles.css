@@ -1,0 +1,21 @@
+.services, .blocks, .albums {
+  text-align: center;
+}
+
+.albums img {
+  object-fit: cover;
+  width: 150px;
+  height: 100px;
+  
+}
+
+.tab-content {
+  margin-top: 10px;
+}
+.top-line {
+  margin-top: 0;
+}
+
+.no-margin-top {
+   margin-bottom: 0;
+}
