@@ -9,7 +9,6 @@ export function load(templateName) {
 
   return getRequest(`templates/${templateName}.handlebars`)
     .then(template => {
-      debugger;
       const compiledTemplate = Handlebars.compile(template);
       // cacheObj[templateName] = compiledTemplate;
       return Promise.resolve(compiledTemplate);
