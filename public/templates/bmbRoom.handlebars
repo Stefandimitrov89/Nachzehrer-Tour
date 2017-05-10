@@ -1,0 +1,18 @@
+<h1>BMB-rooms</h1>
+
+{{#each BMB-room}}
+<ul>
+  <li>Name: {{name}}</li>
+  <li>stars: {{stars}}</li>
+  <li>price: {{price}}</li>
+  <li>userRatings: {{userRatings}}</li>
+  <li>extras:
+    <ul>
+      <li>wifi: {{extras.wifi}}</li>
+      <li>newspaper: {{extras.stove}}</li>
+      <li>breakfast: {{extras.stove}}</li>
+      <li>petsAllowed: {{extras.petsAllowed}}</li>
+    </ul>
+  </li>
+</ul>
+{{/each}}
