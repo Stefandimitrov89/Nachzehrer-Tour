@@ -30,6 +30,7 @@ class MyRouter {
   static matchUrls(currentUrl, targetUrl) {
     const currentUrlParts = currentUrl.split(/\//g);
     const targetUrlParts = targetUrl.split(/\//g);
+    console.log("currentUrl:" + currentUrl);
 
     if (targetUrlParts.length !== currentUrlParts.length) {
       console.log('length');
