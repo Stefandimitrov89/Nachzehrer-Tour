@@ -19,8 +19,9 @@ class MyRouter {
     
     for (const {targetUrl, callback} of this._routes) {
       const params = MyRouter.matchUrls(currentUrl, targetUrl);
+        console.log("---->>> MyRouter ++++++ navigate - this.params = " + params);
       if (params) {
-        // console.log("---->>> MyRouter ++++++ navigate - this.params = " + params);
+        console.log("---->>> MyRouter ++++++ navigate - this.params = " + params);
         callback(params);
         break;
       }
@@ -47,7 +48,7 @@ class MyRouter {
         // console.log("---->>> ==================================");
         // console.log("---->>> currentUrlParts[i]: " + currentUrlParts[i]);
         // console.log("---->>> targetUrlParts[i]: " + targetUrlParts[i]);
-        if (currentUrlParts[i] !== targetUrlParts[i]) {
+        if (currentUrlParts[i] === targetUrlParts[i]) {
           // console.log("---->>> MyRouter - matchUrls - false");
           // console.log('false');
           // console.log(params);
